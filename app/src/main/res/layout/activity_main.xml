@@ -5,15 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="48dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTermLoan"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/term_loan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_compass"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            android:layout_marginBottom="20dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDls"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/dls"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_compass"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
