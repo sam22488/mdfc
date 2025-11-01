@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">mdfc</string>
+    <string name="app_name">MDFC</string>
+    <string name="app_title">WBMDFC Portal</string>
+    <string name="term_loan">TERM LOAN</string>
+    <string name="dls">DLS</string>
 </resources>
